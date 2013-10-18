@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <script src="openseadragon/src/openseadragon.js"></script>
+        <script src="openseadragon/src/fullscreen.js"></script>
+        <script src="openseadragon/src/eventsource.js"></script>
+        <script src="openseadragon/src/mousetracker.js"></script>
+        <script src="openseadragon/src/control.js"></script>
+        <script src="openseadragon/src/controldock.js"></script>
+        <script src="openseadragon/src/viewer.js"></script>
+        <script src="openseadragon/src/navigator.js"></script>
+        <script src="openseadragon/src/strings.js"></script>
+        <script src="openseadragon/src/point.js"></script>
+        <script src="openseadragon/src/tilesource.js"></script>
+        <script src="openseadragon/src/dzitilesource.js"></script>
+        <script src="openseadragon/src/iiiftilesource.js"></script>
+        <script src="openseadragon/src/iiif1_1tilesource.js"></script>
+        <script src="openseadragon/src/osmtilesource.js"></script>
+        <script src="openseadragon/src/tmstilesource.js"></script>
+        <script src="openseadragon/src/legacytilesource.js"></script>
+        <script src="openseadragon/src/tilesourcecollection.js"></script>
+        <script src="openseadragon/src/button.js"></script>
+        <script src="openseadragon/src/buttongroup.js"></script>
+        <script src="openseadragon/src/rectangle.js"></script>
+        <script src="openseadragon/src/referencestrip.js"></script>
+        <script src="openseadragon/src/displayrectangle.js"></script>
+        <script src="openseadragon/src/spring.js"></script>
+        <script src="openseadragon/src/tile.js"></script>
+        <script src="openseadragon/src/overlay.js"></script>
+        <script src="openseadragon/src/drawer.js"></script>
+        <script src="openseadragon/src/viewport.js"></script>
+
+        <style>
+            .openseadragon {
+                width: 800px;
+                height:600px;
+                background-color: black;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="example-tilesource-collection" 
+             class="openseadragon" >
+        </div>
+
+        <script type="text/javascript">
+            
+            var tileSources = [
+                "example-images/pnp/ppmsca/05900/05954/05954.dzi",
+                "example-images/pnp/ppmsca/05900/05954/05955.dzi",
+                "example-images/pnp/ppmsca/05900/05954/05956.dzi",
+                "example-images/pnp/ppmsca/05900/05954/05957.dzi",
+                "example-images/pnp/ppmsca/05900/05954/05958.dzi",
+                "example-images/pnp/ppmsca/05900/05954/05959.dzi",
+                "example-images/pnp/ppmsca/05900/05954/05960.dzi",
+                "example-images/pnp/ppmsca/05900/05954/05961.dzi",
+                "example-images/pnp/ppmsca/05900/05954/05962.dzi",
+                "example-images/pnp/ppmsca/05900/05954/05963.dzi"
+            ];
+            var osd = OpenSeadragon({
+                id: "example-tilesource-collection",
+                prefixUrl: "openseadragon/images/",
+                debugMode: false, //if you want to see the render grid
+
+//                collectionMode: true,
+//                collectionRows: 2,
+//                collectionTileSize: 1024,
+//                collectionTileMargin: 256,
+
+                tileSources: tileSources
+            });
+        </script>
+    </body>
+</html>
