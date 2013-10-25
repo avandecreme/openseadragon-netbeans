@@ -21,3 +21,7 @@ Tested with netbeans 7.4.
 
 
 Note: there is no integration with grunt. This project only allows to easily debug and format with netbeans. You still will have to build, test and package from the command line.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/avandecreme/openseadragon-netbeans/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
